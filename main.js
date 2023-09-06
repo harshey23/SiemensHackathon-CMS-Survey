@@ -144,7 +144,7 @@ function OnSuccess(response)
 
     var str= String(response.d);
 
-    var res= str.split(",")
+    var res= JSON.stringify(response);
 
     document.getElementById('s1q1number').innerHTML = res[0];
 
